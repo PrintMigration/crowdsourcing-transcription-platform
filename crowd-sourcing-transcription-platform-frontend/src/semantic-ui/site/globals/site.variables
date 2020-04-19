@@ -1,0 +1,10 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@headerFont: 'LTC-Bodoni-175';
+@pageFont: 'Abel';
+@googleImportFonts: false;
+
+@primaryColor: #1a8041;
+@secondaryColor: #be3b62;

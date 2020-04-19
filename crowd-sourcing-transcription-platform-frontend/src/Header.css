@@ -1,0 +1,19 @@
+.ui.headertest.menu:not(.vertical) .item {
+  background-color: transparent !important;
+  transition: all 0.5s ease-in;
+}
+
+.ui.headertest.menu:not(.vertical) .item:hover {
+  background-color: 'white';
+
+  letter-spacing: 2px;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.ui.menu .active.item {
+  color: #1a8041;
+}
