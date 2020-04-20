@@ -28,25 +28,25 @@ the fusionauth instructions at "Complete maintenance mode and setup wizard"
 - https://fusionauth.io/docs/v1/tech/5-minute-setup-guide
 
 ## Configure the docker-compose.yml
-- MySQL (https://hub.docker.com/_/mysql)
-environment:
+### MySQL (https://hub.docker.com/_/mysql)
+- environment:
   Initially we have it configured to have a root user with an empty password.
   You may change this to be more secure.
-ports:
+- ports:
   The format is "hostingServerPort:dockerContainerPort".
   It is strongly recommended to leave the dockerContainerPort as 3306, 
   however the hostingServerPort can be any open port on the physical machine.
 
-- app (This is running the jar image "printapi")
- environment:
+### app (This is running the jar image "printapi")
+- environment:
   SPRING_DATASOURCE_USERNAME: <- MySQL root user
   SPRING_DATASOURCE_PASSWORD: <- MySQL root user's password
   
-- fusionauth 
-(https://fusionauth.io/docs/v1/tech/installation-guide/docker) (https://hub.docker.com/r/fusionauth/fusionauth-app)
+### FusionAuth 
+- https://fusionauth.io/docs/v1/tech/installation-guide/docker     - https://hub.docker.com/r/fusionauth/fusionauth-app
 
 ## Docker Volumes
 - To have persistent data this docker-compose.yml is using volumes. When moving data between
-machines it is recommended to use mysqldump, however it is possible to move entire volumes. There
-are further instructions at https://hub.docker.com/_/mysql and https://docs.docker.com/storage/.
+machines it is recommended to use mysqldump, however it is possible to move entire volumes. 
+- There are further instructions at https://hub.docker.com/_/mysql and https://docs.docker.com/storage/.
 
