@@ -43,7 +43,8 @@ the fusionauth instructions at "Complete maintenance mode and setup wizard"
   SPRING_DATASOURCE_PASSWORD: <- MySQL root user's password
   
 ### FusionAuth 
-- https://fusionauth.io/docs/v1/tech/installation-guide/docker     - https://hub.docker.com/r/fusionauth/fusionauth-app
+- https://fusionauth.io/docs/v1/tech/installation-guide/docker    
+- https://hub.docker.com/r/fusionauth/fusionauth-app
 
 ## Docker Volumes
 - To have persistent data this docker-compose.yml is using volumes. When moving data between
