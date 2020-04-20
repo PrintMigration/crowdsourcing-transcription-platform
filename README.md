@@ -1,7 +1,7 @@
 # Crowdsourcing Transcription Platform
 Web application that allows users to collaborate on the transcription of old documents.
 
-## Software used:
+## Software used
 1. Java JDK 11
 2. NodeJS w/ npm
 3. Maven
@@ -9,13 +9,13 @@ Web application that allows users to collaborate on the transcription of old doc
 5. Docker
 NOTE: If running with Docker, all you need to install on the host is Docker
 
-## To run on Docker:
+## To run on Docker
 1. Install Docker on host machine
 1. Retrieve the .jar, Dockerfile, and docker-compose.yml from the repository
 3. Run the command "docker build -t printapi ." to build the docker image
 4. Run the command "docker-compose up" to run the application
 
-## To build a new jar:
+## To build a new jar
 1. At the root of the backend directory run the command "mvn clean install"
 2. /target will have the new .jar
 
